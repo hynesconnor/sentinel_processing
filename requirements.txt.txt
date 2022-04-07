@@ -1,0 +1,12 @@
+sentinel_query.py = python v3.9.7
+	urllib3 = 1.26.9
+	pandas = 1.4.1
+	sentinelsat = 1.1.1
+
+# using a previous python version for rasterio functionality. If you can get rasterio running
+# on a newer version of python, you will not need a secondary environment.
+satellite_processing = python v3.6.13
+	rasterio = 1.1.0
+	numpy = 1.19.2
+	geopandas = 0.9.0
+	matplotlib = 3.3.4 
