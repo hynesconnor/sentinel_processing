@@ -13,8 +13,8 @@ CWD = os.getcwd()
 URL = 'https://developers.google.com/public-data/docs/canonical/countries_csv'
 COU_DIR = '/data/country/'
 IMG_DIR = '/data/image/'
-USER = ''
-PASS = ''
+USER = '' # enter username
+PASS = '' # enter password
 DATE_END = date.today()
 
 # adjustable search parameters

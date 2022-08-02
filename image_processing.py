@@ -11,7 +11,7 @@ G_DRIVER = 'Gtiff' # driver to process geotiff files
 
 # parameters to be adjusted
 BAND_COUNT = 3 # used to control the number of bands being written. (rgb default = 3)
-FOLDER = 'sentinelLV' # satellite folder, change to desired satellite data within the image folder
+FOLDER = '' # satellite folder, change to desired satellite data within the image folder
 
 # creates array of band names, returns band names and path to bands
 def get_file_names():
@@ -57,7 +57,7 @@ def rgb():
     band_names, IMG_DIR = get_file_names()
     bands = band_process(band_names, IMG_DIR)
     band_write(bands)
-    print("Completed.")
+    print("RGB Completed.")
 
 rgb()
 
@@ -116,14 +116,14 @@ def ndvi():
     ndvi = ndvi_calc()
     export_normalized_diff(ndvi, 'ndvi/', FOLDER + '_ndvi.tif')
     print('Mean vegitation density of raster: ' + np.nanmean(ndvi[0]).astype(str))
-    print('Completed.')
+    print('NDVI Completed.')
 
 # reports and writes ndwi statistics 
 def ndwi():
     ndwi = ndwi_calc()
     export_normalized_diff(ndwi, 'ndwi/', FOLDER + '_ndwi.tif')
-    #print('Mean water density of raster: ' + np.nanmean(ndwi[0]).astype(str))
-    print('Completed.')
+    print('Mean water density of raster: ' + np.nanmean(ndwi[0]).astype(str))
+    print('NDWI Completed.')
     
 ndvi()
 ndwi()

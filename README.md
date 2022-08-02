@@ -1,9 +1,18 @@
 # Querying and Processing Sentinel-2 Satellite Imagery Using SentinelAPI
 Using the [Copernicus Open Access Hub](https://scihub.copernicus.eu/) with the [Sentinel Python API](https://sentinelsat.readthedocs.io/en/master/api_overview.html) to source and process satellite rasters for zonal statistics.
 
+Below is an example of an RGB GeoTIFF layer produced by the program. This layer can be loaded into any GIS applications such as ArcGIS and QGIS. 
+
+<div style="text-align: center;">
+
+![](/mkdwn/rgb.png "Satellite Imagery - Greater Seattle")
+
+</div>
+
+
 ## Installation and Use
 
-Download and unzip the latest release [here](). Unzip into location of your choice.
+Download and unzip the latest release [here](https://github.com/hynesconnor/sentinel_processing/releases). Unzip into location of your choice.
 
 **IMPORTANT**: Specifications on the Python versions used and the packages installed can be found in `requirements.txt`.
 
@@ -32,4 +41,12 @@ Download and unzip the latest release [here](). Unzip into location of your choi
     - NDVI .tif file will be output to `../data/processed/ndvi`.
     - NDWI .tif file will be output to `../data/processed/ndwi`.
 
-4. The mean vegitation density of the raster is also printed to the console.
+4. The mean vegitation and water density of the rasters are also printed to the console.
+
+## In Practice. . . 
+
+Below are two examples of NDVI and NDWI layers produced by the image processesing steps. The layers are produced using Sentinel-2 data of the greater Seattle area. These layers can be loaded into GIS applications such as ArcGIS or QGIS.   
+
+NDVI | NDWI
+- | -
+![](/mkdwn/ndvi_color.png) | ![](/mkdwn/ndwi_color2.png)
