@@ -3,12 +3,9 @@ Using the [Copernicus Open Access Hub](https://scihub.copernicus.eu/) with the [
 
 Below is an example of an RGB GeoTIFF layer produced by the program. This layer can be loaded into any GIS applications such as ArcGIS and QGIS. 
 
-<div style="text-align: center;">
-
-![](/mkdwn/rgb.png "Satellite Imagery - Greater Seattle")
-
-</div>
-
+<p align="center">
+<img src="/mkdwn/rgb.png" alt="Satellite Imagery - Greater Seattle"/>
+</p>
 
 ## Installation and Use
 
@@ -47,6 +44,6 @@ Download and unzip the latest release [here](https://github.com/hynesconnor/sent
 
 Below are two examples of NDVI and NDWI layers produced by the image processesing steps. The layers are produced using Sentinel-2 data of the greater Seattle area. These layers can be loaded into GIS applications such as ArcGIS or QGIS.   
 
-NDVI | NDWI
-- | -
+NDVI                       | NDWI
+:-------------------------:|:---------------------------:
 ![](/mkdwn/ndvi_color.png) | ![](/mkdwn/ndwi_color2.png)
